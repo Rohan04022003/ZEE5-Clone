@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../image/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>ZEE5 - Watch TV Shows, Web Series, Movies & Live TV Channels</title>
+  </head>
+  <body class="bg-[#0F0617] text-white">
+    <div id="main">
+      <div
+        id="header"
+        class="flex justify-between items-center h-20 lg:mx-8 mx-4 bg-[#0F0617]"
+      >
+        <div id="leftHeader">
+          <ul class="flex items-center gap-8">
+            <li class="w-12">
+              <a href="#"><img src="../image/logo.svg" alt="" /></a>
+            </li>
+            <li class="border-b-2 cursor-pointer hidden lg:flex">
+              <a href="#">Home</a>
+            </li>
+            <li
+              class="hover:border-b-2 border-b-2 hover:border-white border-transparent cursor-pointer py-1 hidden lg:flex"
+            >
+              <a href="#">TV Shows</a>
+            </li>
+            <li
+              class="hover:border-b-2 border-b-2 hover:border-white border-transparent cursor-pointer py-1 hidden lg:flex"
+            >
+              <a href="#">Movies</a>
+            </li>
+            <li
+              class="hover:border-b-2 border-b-2 hover:border-white border-transparent cursor-pointer py-1 hidden lg:flex"
+            >
+              <a href="#">Cricket</a>
+            </li>
+            <li
+              class="hover:border-b-2 border-b-2 hover:border-white border-transparent cursor-pointer py-1 hidden lg:flex"
+            >
+              <a href="#">Premium</a>
+            </li>
+            <li class="cursor-pointer relative hidden lg:flex" id="app">
+              <span class="material-symbols-outlined"> apps </span>
+            </li>
+          </ul>
+        </div>
+        <div id="rightHeader" class="flex items-center gap-5">
+          <div id="search" class="flex">
+            <span
+              class="material-symbols-outlined xl:border xl:border-r-0 xl:border-[#757575] xl:rounded-l-lg h-10 w-10 cursor-pointer xl:rounded-tr-none xl:rounded-br-none rounded-full xl:bg-transparent bg-[rgb(27,19,35)] hover:bg-[#332B3A] xl:hover:bg-none"
+            >
+              search </span
+            ><input
+              type="text"
+              placeholder="Search for Movies, Shows, Channels etc."
+              class="h-10 w-64 bg-transparent border border-l-0 rounded-r-lg text-xs border-[#757575] text-[#757575] outline-none hidden xl:flex"
+            />
+          </div>
+          <div id="language" class="hidden xl:flex">
+            <span class="material-symbols-outlined"> translate </span>
+          </div>
+          <div id="download" class="hidden xl:flex">
+            <span class="material-symbols-outlined"> download </span>
+          </div>
+          <button
+            class="px-3 py-2 border rounded-lg text-sm font-semibold hover:bg-white hover:text-black hover:duration-500 hidden xl:flex"
+          >
+            LOGIN
+          </button>
+          <button
+            class="hidden md:flex items-center bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-2.5 px-3 rounded-lg text-sm gap-1 font-semibold"
+          >
+            <span class="material-symbols-outlined" id="Premium">
+              workspace_premium </span
+            >BUY PLAN
+          </button>
+          <div id="hamburger">
+            <span class="material-symbols-outlined"> menu </span>
+          </div>
+        </div>
+      </div>
+
+      <div id="hero" class="">
+        <div
+          class="slideshow-container lg:w-[100%] w-[100%] md:h-auto h-[30vh]"
+        >
+          <div class="mySlides fade">
+            <img src="../image/img 3.webp" style="width: 100%; height: 75vh" />
+            <div class="text">
+              <p class="font-bold lg:text-4xl">Sunflower</p>
+              <div id="heroBtn" class="flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-white hover:text-black border hover:duration-300 py-2 px-3 rounded-lg text-xs font-bold uppercase"
+                >
+                  <span class="material-symbols-outlined play">
+                    play_circle </span
+                  >Watch
+                </button>
+                <button
+                  class="md:flex hidden items-center bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-2.5 px-3 rounded-lg text-xs gap-1 font-bold"
+                >
+                  <span class="material-symbols-outlined" id="Premium">
+                    workspace_premium </span
+                  >BUY PLAN
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../image/img 2.webp" style="width: 100%; height: 75vh" />
+            <div class="text">
+              <p class="font-bold lg:text-4xl">Khichdi 2</p>
+              <div id="heroBtn" class="flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-white hover:text-black border hover:duration-300 py-2 px-3 rounded-lg text-xs font-bold uppercase"
+                >
+                  <span class="material-symbols-outlined play">
+                    play_circle </span
+                  >Watch
+                </button>
+                <button
+                  class="md:flex hidden items-center bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-2.5 px-3 rounded-lg text-xs gap-1 font-bold"
+                >
+                  <span class="material-symbols-outlined" id="Premium">
+                    workspace_premium </span
+                  >BUY PLAN
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../image/img 1.webp" style="width: 100%; height: 75vh" />
+            <div class="text">
+              <p class="font-bold lg:text-4xl">Tejas</p>
+              <div id="heroBtn" class="flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-white hover:text-black border hover:duration-300 py-2 px-3 rounded-lg text-xs font-bold uppercase"
+                >
+                  <span class="material-symbols-outlined play">
+                    play_circle </span
+                  >Watch
+                </button>
+                <button
+                  class="md:flex hidden items-center bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-2.5 px-3 rounded-lg text-xs gap-1 font-bold"
+                >
+                  <span class="material-symbols-outlined" id="Premium">
+                    workspace_premium </span
+                  >BUY PLAN
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../image/img 4.webp" style="width: 100%; height: 75vh" />
+            <div class="text">
+              <p class="font-bold lg:text-4xl">The Kerala Story</p>
+              <div id="heroBtn" class="flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-white hover:text-black border hover:duration-300 py-2 px-3 rounded-lg text-xs font-bold uppercase"
+                >
+                  <span class="material-symbols-outlined play">
+                    play_circle </span
+                  >Watch
+                </button>
+                <button
+                  class="md:flex hidden items-center bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-2.5 px-3 rounded-lg text-xs gap-1 font-bold"
+                >
+                  <span class="material-symbols-outlined" id="Premium">
+                    workspace_premium </span
+                  >BUY PLAN
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../image/img 5.webp" style="width: 100%; height: 75vh" />
+            <div class="text">
+              <p class="font-bold lg:text-4xl">Sam Bahadur</p>
+              <div id="heroBtn" class="flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-white hover:text-black border hover:duration-300 py-2 px-3 rounded-lg text-xs font-bold uppercase"
+                >
+                  <span class="material-symbols-outlined play">
+                    play_circle </span
+                  >Watch
+                </button>
+                <button
+                  class="md:flex hidden items-center bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-2.5 px-3 rounded-lg text-xs gap-1 font-bold"
+                >
+                  <span class="material-symbols-outlined" id="Premium">
+                    workspace_premium </span
+                  >BUY PLAN
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../image/img 6.webp" style="width: 100%; height: 75vh" />
+            <div class="text">
+              <p class="font-bold lg:text-4xl">Bhagya Lakshmi</p>
+              <div id="heroBtn" class="flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-white hover:text-black border hover:duration-300 py-2 px-3 rounded-lg text-xs font-bold uppercase"
+                >
+                  <span class="material-symbols-outlined play">
+                    play_circle </span
+                  >Watch
+                </button>
+                <button
+                  class="md:flex hidden items-center bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-2.5 px-3 rounded-lg text-xs gap-1 font-bold"
+                >
+                  <span class="material-symbols-outlined" id="Premium">
+                    workspace_premium </span
+                  >BUY PLAN
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <br />
+      </div>
+
+      <div id="page1" class="my-3">
+        <div id="page1Movies" class="lg:mx-10 md:mx-5 mx-3">
+          <div id="heading" class="flex justify-between items-center pb-4">
+            <h2 class="lg:text-2xl text-lg font-bold">Trending Near You</h2>
+            <a
+              href="#"
+              class="flex items-center justify-center text-md font-medium py-2 text-[#8230C6]"
+              >More
+              <span class="material-symbols-outlined"> chevron_right </span></a
+            >
+          </div>
+
+          <div
+            id="moviesRow"
+            class="flex flex-wrap w-full md:gap-0 gap-3 justify-between"
+          >
+            <div
+              id="movies"
+              class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+            >
+              <img
+                src="../image/img 7.webp"
+                class="rounded-lg w-[100%] cursor-pointer"
+              />
+
+              <div
+                class="movieContent absolute z-10 bottom-0 bg-white w-full rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+              >
+                <p class="text-black font-semibold md:text-base text-xs">
+                  The Kerala Story
+                </p>
+                <div class="moviesBtn flex gap-2">
+                  <button
+                    class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.5rem"
+                    >
+                      play_circle </span
+                    >Watch
+                  </button>
+                  <button
+                    class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.2rem"
+                    >
+                      share </span
+                    >SHARE
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              id="movies"
+              class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+            >
+              <img
+                src="../image/img 8.webp"
+                class="rounded-lg w-[100%] cursor-pointer"
+              />
+
+              <div
+                class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+              >
+                <p class="text-black font-semibold md:text-base text-xs">
+                  Sam Bahadur
+                </p>
+                <div class="moviesBtn flex gap-2">
+                  <button
+                    class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.5rem"
+                    >
+                      play_circle </span
+                    >Watch
+                  </button>
+                  <button
+                    class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.2rem"
+                    >
+                      share </span
+                    >SHARE
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              id="movies"
+              class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+            >
+              <img
+                src="../image/img 9.webp"
+                class="rounded-lg w-[100%] cursor-pointer"
+              />
+
+              <div
+                class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+              >
+                <p class="text-black font-semibold md:text-base text-xs">
+                  Sunflower
+                </p>
+                <div class="moviesBtn flex gap-2">
+                  <button
+                    class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.5rem"
+                    >
+                      play_circle </span
+                    >Watch
+                  </button>
+                  <button
+                    class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.2rem"
+                    >
+                      share </span
+                    >SHARE
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              id="movies"
+              class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+            >
+              <img
+                src="../image/img 10.webp"
+                class="rounded-lg w-[100%] cursor-pointer"
+              />
+
+              <div
+                class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+              >
+                <p class="text-black font-semibold md:text-base text-xs">
+                  Tejas
+                </p>
+                <div class="moviesBtn flex gap-2">
+                  <button
+                    class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.5rem"
+                    >
+                      play_circle </span
+                    >Watch
+                  </button>
+                  <button
+                    class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.2rem"
+                    >
+                      share </span
+                    >SHARE
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              id="movies"
+              class="hidden sm:flex w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+            >
+              <img
+                src="../image/img 11.webp"
+                class="rounded-lg w-[100%] cursor-pointer"
+              />
+
+              <div
+                class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+              >
+                <p class="text-black font-semibold md:text-base text-xs">
+                  Kadak Singh
+                </p>
+                <div class="moviesBtn flex gap-2">
+                  <button
+                    class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.5rem"
+                    >
+                      play_circle </span
+                    >Watch
+                  </button>
+                  <button
+                    class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.2rem"
+                    >
+                      share </span
+                    >SHARE
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              id="movies"
+              class="hidden sm:flex w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+            >
+              <img
+                src="../image/img 12.webp"
+                class="rounded-lg w-[100%] cursor-pointer"
+              />
+
+              <div
+                class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+              >
+                <p class="text-black font-semibold md:text-base text-xs">
+                  Sirf Ek Bandaa
+                </p>
+                <div class="moviesBtn flex sm:gap-1 lg:gap-2">
+                  <button
+                    class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.5rem"
+                    >
+                      play_circle </span
+                    >Watch
+                  </button>
+                  <button
+                    class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.2rem"
+                    >
+                      share </span
+                    >SHARE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="page1" class="my-10">
+        <div id="page1Movies" class="lg:mx-10 md:mx-5 mx-3">
+          <div id="heading" class="flex justify-between items-center pb-4">
+            <h2 class="lg:text-2xl text-lg font-bold">Loved by the Masses</h2>
+            <a
+              href="#"
+              class="flex items-center justify-center text-md font-medium py-2 text-[#8230C6]"
+              >More
+              <span class="material-symbols-outlined"> chevron_right </span></a
+            >
+          </div>
+
+          <div
+            id="moviesRow"
+            class="flex flex-wrap w-full md:gap-0 gap-3 justify-between"
+          >
+            <div
+              id="movies"
+              class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+            >
+              <img
+                src="../image/img 13.webp"
+                class="rounded-lg w-[100%] cursor-pointer"
+              />
+
+              <div
+                class="movieContent absolute z-10 bottom-0 bg-white w-full rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+              >
+                <p class="text-black font-semibold md:text-base text-xs">
+                  Gadar 2
+                </p>
+                <div class="moviesBtn flex gap-2">
+                  <button
+                    class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.5rem"
+                    >
+                      play_circle </span
+                    >Watch
+                  </button>
+                  <button
+                    class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.2rem"
+                    >
+                      share </span
+                    >Watch
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              id="movies"
+              class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+            >
+              <img
+                src="../image/img 14.webp"
+                class="rounded-lg w-[100%] cursor-pointer"
+              />
+
+              <div
+                class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+              >
+                <p class="text-black font-semibold md:text-base text-xs">
+                  Khichdi 2
+                </p>
+                <div class="moviesBtn flex gap-2">
+                  <button
+                    class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.5rem"
+                    >
+                      play_circle </span
+                    >Watch
+                  </button>
+                  <button
+                    class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.2rem"
+                    >
+                      share </span
+                    >Watch
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              id="movies"
+              class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+            >
+              <img
+                src="../image/img 15.webp"
+                class="rounded-lg w-[100%] cursor-pointer"
+              />
+
+              <div
+                class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+              >
+                <p class="text-black font-semibold md:text-base text-xs">
+                  Ghoomer
+                </p>
+                <div class="moviesBtn flex gap-2">
+                  <button
+                    class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.5rem"
+                    >
+                      play_circle </span
+                    >Watch
+                  </button>
+                  <button
+                    class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.2rem"
+                    >
+                      share </span
+                    >Watch
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              id="movies"
+              class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+            >
+              <img
+                src="../image/img 16.webp"
+                class="rounded-lg w-[100%] cursor-pointer"
+              />
+
+              <div
+                class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+              >
+                <p class="text-black font-semibold md:text-base text-xs">
+                  Under Cover
+                </p>
+                <div class="moviesBtn flex gap-2">
+                  <button
+                    class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.5rem"
+                    >
+                      play_circle </span
+                    >Watch
+                  </button>
+                  <button
+                    class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.2rem"
+                    >
+                      share </span
+                    >Watch
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              id="movies"
+              class="hidden sm:flex w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+            >
+              <img
+                src="../image/img 17.webp"
+                class="rounded-lg w-[100%] cursor-pointer"
+              />
+
+              <div
+                class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+              >
+                <p class="text-black font-semibold md:text-base text-xs">
+                  Oye Makhna
+                </p>
+                <div class="moviesBtn flex gap-2">
+                  <button
+                    class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.5rem"
+                    >
+                      play_circle </span
+                    >Watch
+                  </button>
+                  <button
+                    class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.2rem"
+                    >
+                      share </span
+                    >Watch
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              id="movies"
+              class="hidden sm:flex w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+            >
+              <img
+                src="../image/img 18.webp"
+                class="rounded-lg w-[100%] cursor-pointer"
+              />
+
+              <div
+                class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+              >
+                <p class="text-black font-semibold md:text-base text-xs">
+                  14 Phere
+                </p>
+                <div class="moviesBtn flex sm:gap-1 lg:gap-2">
+                  <button
+                    class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.5rem"
+                    >
+                      play_circle </span
+                    >Watch
+                  </button>
+                  <button
+                    class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 1.2rem"
+                    >
+                      share </span
+                    >Watch
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page2" class="gap-2 lg:mx-10 md:mx-5 mx-3">
+      <div id="heading" class="flex justify-between items-center pb-4">
+        <h2 class="lg:text-2xl text-lg font-bold">Loved by the Masses</h2>
+        <a
+          href="#"
+          class="flex items-center justify-center text-md font-medium py-2 text-[#8230C6]"
+          >More
+          <span class="material-symbols-outlined"> chevron_right </span></a
+        >
+      </div>
+      <div
+        id="moviesCard"
+        class="flex gap-2 justify-between flex-nowrap md:flex-wrap"
+      >
+        <div id="cardBody" class="bg-gray-100 p-2 rounded-lg lg:h-auto">
+          <img
+            src="../image/img 19.webp"
+            alt="img"
+            class="rounded-lg cursor-pointer"
+          />
+          <div id="cardInfo" class="py-1 flex items-center justify-between">
+            <div class="left text-black">
+              <p class="font-bold text-gray-700">Kundali Bhagya</p>
+              <p class="font-semibold text-gray-500">6 Mar</p>
+            </div>
+
+            <div class="right">
+              <button
+                class="flex items-center gap-1 bg-[#8230C6] hover:bg-[#5C1695] text-white hover:text-white border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.5rem"
+                >
+                  play_circle </span
+                >Watch
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="cardBody" class="bg-gray-100 p-2 rounded-lg lg:h-auto">
+          <img
+            src="../image/img 20.webp"
+            alt="img"
+            class="rounded-lg cursor-pointer"
+          />
+          <div id="cardInfo" class="py-1 flex items-center justify-between">
+            <div class="left text-black">
+              <p class="font-bold text-gray-700">Radha Mohan</p>
+              <p class="font-semibold text-gray-500">6 Mar</p>
+            </div>
+
+            <div class="right">
+              <button
+                class="flex items-center gap-1 bg-[#8230C6] hover:bg-[#5C1695] text-white hover:text-white border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.5rem"
+                >
+                  play_circle </span
+                >Watch
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="cardBody" class="bg-gray-100 p-2 rounded-lg lg:h-auto">
+          <img
+            src="../image/img 21.webp"
+            alt="img"
+            class="rounded-lg cursor-pointer"
+          />
+          <div id="cardInfo" class="py-1 flex items-center justify-between">
+            <div class="left text-black">
+              <p class="font-bold text-gray-700">Rab se hai dua</p>
+              <p class="font-semibold text-gray-500">6 Mar</p>
+            </div>
+
+            <div class="right">
+              <button
+                class="flex items-center gap-1 bg-[#8230C6] hover:bg-[#5C1695] text-white hover:text-white border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.5rem"
+                >
+                  play_circle </span
+                >Watch
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="cardBody" class="bg-gray-100 p-2 rounded-lg lg:h-auto">
+          <img
+            src="../image/img 22.webp"
+            alt="img"
+            class="rounded-lg cursor-pointer"
+          />
+          <div id="cardInfo" class="py-1 flex items-center justify-between">
+            <div class="left text-black">
+              <p class="font-bold text-gray-700">Kaise mujhe tum</p>
+              <p class="font-semibold text-gray-500">6 Mar</p>
+            </div>
+
+            <div class="right">
+              <button
+                class="flex items-center gap-1 bg-[#8230C6] hover:bg-[#5C1695] text-white hover:text-white border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.5rem"
+                >
+                  play_circle </span
+                >Watch
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          id="cardBody"
+          class="bg-white p-2 rounded-lg hidden xl:flex flex-col lg:h-auto"
+        >
+          <img
+            src="../image/img 23.webp"
+            alt="img"
+            class="rounded-lg cursor-pointer"
+          />
+          <div id="cardInfo" class="py-1 flex items-center justify-between">
+            <div class="left text-black">
+              <p class="font-bold text-gray-700">Kumkum Bhagya</p>
+              <p class="font-semibold text-gray-500">6 Mar</p>
+            </div>
+
+            <div class="right">
+              <button
+                class="flex items-center gap-1 bg-[#8230C6] hover:bg-[#5C1695] text-white hover:text-white border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.5rem"
+                >
+                  play_circle </span
+                >Watch
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page1" class="my-10">
+      <div id="page1Movies" class="lg:mx-10 md:mx-5 mx-3">
+        <div id="heading" class="flex justify-between items-center pb-4">
+          <h2 class="lg:text-2xl text-lg font-bold">Top Bhojpuri Movies</h2>
+          <a
+            href="#"
+            class="flex items-center justify-center text-md font-medium py-2 text-[#8230C6]"
+            >More
+            <span class="material-symbols-outlined"> chevron_right </span></a
+          >
+        </div>
+
+        <div
+          id="moviesRow"
+          class="flex flex-wrap w-full md:gap-0 gap-3 justify-between"
+        >
+          <div
+            id="movies"
+            class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+          >
+            <img
+              src="../image/img 24.webp"
+              class="rounded-lg w-[100%] cursor-pointer"
+            />
+
+            <div
+              class="movieContent absolute z-10 bottom-0 bg-white w-full rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+            >
+              <p class="text-black font-semibold md:text-base text-xs">
+                Commando Arjun
+              </p>
+              <div class="moviesBtn flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.5rem"
+                  >
+                    play_circle </span
+                  >Watch
+                </button>
+                <button
+                  class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.2rem"
+                  >
+                    share </span
+                  >SHARE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="movies"
+            class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+          >
+            <img
+              src="../image/img 25.webp"
+              class="rounded-lg w-[100%] cursor-pointer"
+            />
+
+            <div
+              class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+            >
+              <p class="text-black font-semibold md:text-base text-xs">
+                Nirahua Hindustani 3
+              </p>
+              <div class="moviesBtn flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.5rem"
+                  >
+                    play_circle </span
+                  >Watch
+                </button>
+                <button
+                  class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.2rem"
+                  >
+                    share </span
+                  >SHARE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="movies"
+            class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+          >
+            <img
+              src="../image/img 26.webp"
+              class="rounded-lg w-[100%] cursor-pointer"
+            />
+
+            <div
+              class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+            >
+              <p class="text-black font-semibold md:text-base text-xs">
+                Babali Ke Barat
+              </p>
+              <div class="moviesBtn flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.5rem"
+                  >
+                    play_circle </span
+                  >Watch
+                </button>
+                <button
+                  class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.2rem"
+                  >
+                    share </span
+                  >SHARE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="movies"
+            class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+          >
+            <img
+              src="../image/img 27.webp"
+              class="rounded-lg w-[100%] cursor-pointer"
+            />
+
+            <div
+              class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+            >
+              <p class="text-black font-semibold md:text-base text-xs">
+                Babul
+              </p>
+              <div class="moviesBtn flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.5rem"
+                  >
+                    play_circle </span
+                  >Watch
+                </button>
+                <button
+                  class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.2rem"
+                  >
+                    share </span
+                  >SHARE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="movies"
+            class="hidden sm:flex w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+          >
+            <img
+              src="../image/img 28.webp"
+              class="rounded-lg w-[100%] cursor-pointer"
+            />
+
+            <div
+              class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+            >
+              <p class="text-black font-semibold md:text-base text-xs">
+                Dabang Sarkar
+              </p>
+              <div class="moviesBtn flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.5rem"
+                  >
+                    play_circle </span
+                  >Watch
+                </button>
+                <button
+                  class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.2rem"
+                  >
+                    share </span
+                  >SHARE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="movies"
+            class="hidden sm:flex w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+          >
+            <img
+              src="../image/img 29.webp"
+              class="rounded-lg w-[100%] cursor-pointer"
+            />
+
+            <div
+              class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+            >
+              <p class="text-black font-semibold md:text-base text-xs">
+                Thoda Gussa Thoda Pyar
+              </p>
+              <div class="moviesBtn flex sm:gap-1 lg:gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.5rem"
+                  >
+                    play_circle </span
+                  >Watch
+                </button>
+                <button
+                  class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.2rem"
+                  >
+                    share </span
+                  >SHARE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page2" class="gap-2 lg:mx-10 md:mx-5 mx-3">
+      <div id="heading" class="flex justify-between items-center pb-4">
+        <h2 class="lg:text-2xl text-lg font-bold">Explore in Your Language</h2>
+        <a
+          href="#"
+          class="flex items-center justify-center text-md font-medium py-2 text-[#8230C6]"
+          >More
+          <span class="material-symbols-outlined"> chevron_right </span></a
+        >
+      </div>
+      <div
+        id="moviesCard"
+        class="flex gap-2 justify-between flex-nowrap md:flex-wrap"
+      >
+        <div id="cardBody" class="bg-gray-100 p-2 rounded-lg lg:h-auto">
+          <img
+            src="../image/img 30.webp"
+            alt="img"
+            class="rounded-lg cursor-pointer"
+          />
+          <div id="cardInfo" class="py-1 flex items-center justify-between">
+            <div class="left text-black">
+              <p class="font-bold text-gray-700">Telugu</p>
+              <!-- <p class="font-semibold text-gray-500">Explore latest</p> -->
+            </div>
+
+            <div class="right">
+              <button
+                class="flex items-center gap-1 bg-[#8230C6] hover:bg-[#5C1695] text-white hover:text-white border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.5rem"
+                >
+                  play_circle </span
+                >Watch
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="cardBody" class="bg-gray-100 p-2 rounded-lg lg:h-auto">
+          <img
+            src="../image/img 31.webp"
+            alt="img"
+            class="rounded-lg cursor-pointer"
+          />
+          <div id="cardInfo" class="py-1 flex items-center justify-between">
+            <div class="left text-black">
+              <p class="font-bold text-gray-700">Tamil</p>
+              <!-- <p class="font-semibold text-gray-500">6 Mar</p> -->
+            </div>
+
+            <div class="right">
+              <button
+                class="flex items-center gap-1 bg-[#8230C6] hover:bg-[#5C1695] text-white hover:text-white border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.5rem"
+                >
+                  play_circle </span
+                >Watch
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="cardBody" class="bg-gray-100 p-2 rounded-lg lg:h-auto">
+          <img
+            src="../image/img 32.webp"
+            alt="img"
+            class="rounded-lg cursor-pointer"
+          />
+          <div id="cardInfo" class="py-1 flex items-center justify-between">
+            <div class="left text-black">
+              <p class="font-bold text-gray-700">Kannada</p>
+              <!-- <p class="font-semibold text-gray-500">6 Mar</p> -->
+            </div>
+
+            <div class="right">
+              <button
+                class="flex items-center gap-1 bg-[#8230C6] hover:bg-[#5C1695] text-white hover:text-white border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.5rem"
+                >
+                  play_circle </span
+                >Watch
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="cardBody" class="bg-gray-100 p-2 rounded-lg lg:h-auto">
+          <img
+            src="../image/img 33.webp"
+            alt="img"
+            class="rounded-lg cursor-pointer"
+          />
+          <div id="cardInfo" class="py-1 flex items-center justify-between">
+            <div class="left text-black">
+              <p class="font-bold text-gray-700">Hindi</p>
+              <!-- <p class="font-semibold text-gray-500">6 Mar</p> -->
+            </div>
+
+            <div class="right">
+              <button
+                class="flex items-center gap-1 bg-[#8230C6] hover:bg-[#5C1695] text-white hover:text-white border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.5rem"
+                >
+                  play_circle </span
+                >Watch
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          id="cardBody"
+          class="bg-white p-2 rounded-lg hidden xl:flex flex-col lg:h-auto"
+        >
+          <img
+            src="../image/img 34.webp"
+            alt="img"
+            class="rounded-lg cursor-pointer"
+          />
+          <div id="cardInfo" class="py-1 flex items-center justify-between">
+            <div class="left text-black">
+              <p class="font-bold text-gray-700">Bangla</p>
+              <!-- <p class="font-semibold text-gray-500">6 Mar</p> -->
+            </div>
+
+            <div class="right">
+              <button
+                class="flex items-center gap-1 bg-[#8230C6] hover:bg-[#5C1695] text-white hover:text-white border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.5rem"
+                >
+                  play_circle </span
+                >Watch
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page1" class="my-10">
+      <div id="page1Movies" class="lg:mx-10 md:mx-5 mx-3">
+        <div id="heading" class="flex justify-between items-center pb-4">
+          <h2 class="lg:text-2xl text-lg font-bold">Live Entertainment Channels</h2>
+          <a
+            href="#"
+            class="flex items-center justify-center text-md font-medium py-2 text-[#8230C6]"
+            >More
+            <span class="material-symbols-outlined"> chevron_right </span></a
+          >
+        </div>
+
+        <div
+          id="moviesRow"
+          class="flex flex-wrap w-full md:gap-0 gap-3 justify-between"
+        >
+          <div
+            id="movies"
+            class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+          >
+            <img
+              src="../image/img 35.webp"
+              class="rounded-lg w-[100%] cursor-pointer"
+            />
+
+            <div
+              class="movieContent absolute z-10 bottom-0 bg-white w-full rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+            >
+              <p class="text-black font-semibold md:text-base text-xs">
+                ZEE TV HD
+              </p>
+              <div class="moviesBtn flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.5rem"
+                  >
+                    play_circle </span
+                  >LIVE
+                </button>
+                <button
+                  class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.2rem"
+                  >
+                    share </span
+                  >SHARE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="movies"
+            class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+          >
+            <img
+              src="../image/img 36.webp"
+              class="rounded-lg w-[100%] cursor-pointer"
+            />
+
+            <div
+              class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+            >
+              <p class="text-black font-semibold md:text-base text-xs">
+                ZEE Marathi
+              </p>
+              <div class="moviesBtn flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.5rem"
+                  >
+                    play_circle </span
+                  >LIVE
+                </button>
+                <button
+                  class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.2rem"
+                  >
+                    share </span
+                  >SHARE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="movies"
+            class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+          >
+            <img
+              src="../image/img 37.webp"
+              class="rounded-lg w-[100%] cursor-pointer"
+            />
+
+            <div
+              class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+            >
+              <p class="text-black font-semibold md:text-base text-xs">
+                &tv HD
+              </p>
+              <div class="moviesBtn flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.5rem"
+                  >
+                    play_circle </span
+                  >LIVE
+                </button>
+                <button
+                  class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.2rem"
+                  >
+                    share </span
+                  >SHARE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="movies"
+            class="w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+          >
+            <img
+              src="../image/img 38.webp"
+              class="rounded-lg w-[100%] cursor-pointer"
+            />
+
+            <div
+              class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+            >
+              <p class="text-black font-semibold md:text-base text-xs">
+                ZEE Tamil
+              </p>
+              <div class="moviesBtn flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.5rem"
+                  >
+                    play_circle </span
+                  >LIVE
+                </button>
+                <button
+                  class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.2rem"
+                  >
+                    share </span
+                  >SHARE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="movies"
+            class="hidden sm:flex w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+          >
+            <img
+              src="../image/img 39.webp"
+              class="rounded-lg w-[100%] cursor-pointer"
+            />
+
+            <div
+              class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+            >
+              <p class="text-black font-semibold md:text-base text-xs">
+                ZEE Telugu
+              </p>
+              <div class="moviesBtn flex gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.5rem"
+                  >
+                    play_circle </span
+                  >LIVE
+                </button>
+                <button
+                  class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.2rem"
+                  >
+                    share </span
+                  >SHARE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="movies"
+            class="hidden sm:flex w-[48%] md:w-[15%] sm:w-[31%] relative overflow-hidden"
+          >
+            <img
+              src="../image/img 40.webp"
+              class="rounded-lg w-[100%] cursor-pointer"
+            />
+
+            <div
+              class="movieContent absolute z-10 bottom-0 bg-white w-[100%] rounded-b-lg h-[30%] lg:h-[25%] p-2 flex flex-col gap-2"
+            >
+              <p class="text-black font-semibold md:text-base text-xs">
+                ZEE Kannada
+              </p>
+              <div class="moviesBtn flex sm:gap-1 lg:gap-2">
+                <button
+                  class="flex items-center gap-1 bg-transparent hover:bg-black text-gray-500 hover:text-white border hover:border-black border-gray-500 hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.5rem"
+                  >
+                    play_circle </span
+                  >LIVE
+                </button>
+                <button
+                  class="flex items-center gap-1 text-white bg-[#8230C6] hover:bg-[#5C1695] hover:duration-300 py-1 px-2 rounded-lg text-[.6rem] lg:text-xs font-bold uppercase"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.2rem"
+                  >
+                    share </span
+                  >SHARE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <footer class="text-gray-600 body-font border-t-2 border-gray-700">
+      <div class="container px-2 md:px-12 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <img src="../image/logo.svg" alt="" class="w-14">
+            <span class="ml-3 text-xl">ZEE5</span>
+          </a>
+          <p class="mt-2 text-sm text-gray-300">You can watch every thing in just small price of membership.</p>
+        </div>
+        <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-white tracking-widest text-xl mb-3">Popular TV Shows</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Mahabharat</a>
+              </li>
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Ramayan</a>
+              </li>
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Kahan ho Tum</a>
+              </li>
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Jhansi ki Rani</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-white tracking-widest text-xl mb-3">Premium Movies</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">The Kerala Story</a>
+              </li>
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Khichdi 2</a>
+              </li>
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Sam Bahadur</a>
+              </li>
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Tejas</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-white tracking-widest text-xl mb-3">Popular Web Series</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Love Bites</a>
+              </li>
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Black Windows</a>
+              </li>
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Duranga 2</a>
+              </li>
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Shikarpur</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-white tracking-widest text-xl mb-3">Bollywood Top Celebrities</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Sunny Leone</a>
+              </li>
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Disha Patani</a>
+              </li>
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Deepika Padukone</a>
+              </li>
+              <li>
+                <a class="text-gray-300 hover:text-gray-500 cursor-pointer">Salman Khan</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class=" border-t-2 border-gray-700 h-20 flex flex-col md:flex-row md:justify-between justify-center  items-center md:px-12 px-2">
+        <p class="text-gray-400 md:text-lg text-sm">&#169;2024 | ZEE5 Clone by Rohan Kumar Mahto</p>
+
+        <div id="icons" class="flex gap-1">
+          <div id="download" class="xl:flex">
+            <a href="mailto:rohankumar993985@gmail.com"><span class="material-symbols-outlined text-white"> mail </span></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

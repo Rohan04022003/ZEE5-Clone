@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#search >span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#language > span, #download span, #hamburger > span{
+    font-size: 1.3rem;
+    padding: .6rem;
+    border-radius: 50%;
+    background-color: rgb(27,19,35);
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+#language > span:hover, #download span:hover, #hamburger > span:hover{
+    background-color: #332B3A;
+}
+
+#app:hover{
+    color: #DA76FF;
+    transition: .3s linear;
+}
+
+#Premium{
+    font-size: .9rem;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: start;
+  }
+
+  .text > p{
+    letter-spacing: 1px;
+  }
+
+  #heroBtn .play{
+    font-size: 1rem;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 6px;
+    width: 6px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #DA76FF;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+
+.movieContent{
+    height: 0;
+    bottom: -2rem;
+    transition: .3s linear;
+}
+
+#movies:hover .movieContent{
+    opacity: 100;
+    bottom: 0;
+    height: 25%;
+}
+
+
+#moviesCard{
+    flex-wrap: nowrap !important;
+    height: auto;
+}
+
+#cardInfo{
+    padding: .6rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+  @media (max-width:667px) {
+    .text {
+        gap: .5rem;
+        font-size: 1.1rem;
+        padding:1rem;
+        background-color: #00000013;
+      }
+
+      .movieContent{
+        height: 0;
+        bottom: -2rem;
+        transition: .3s linear;
+    }
+    
+    #movies:hover .movieContent{
+        opacity: 100;
+        bottom: 0;
+        height: 30%;
+    }
+  }
+
+
+
+  @media (max-width:950px) {
+    
+    #moviesCard{
+        flex-wrap: wrap !important;
+    }
+
+    #cardBody{
+        width: 48%;
+    }
+
+    #cardBody > img{
+        width: 100%;
+    }
+  }
+
+
+  @media (max-width:1450px) {
+    
+    .movieContent{
+        display: none;
+    }
+
+  }
+
+  @media (max-width:768px) {
+    
+    
+    .mySlides > img{
+        height: 30vh !important;
+    }
+  }
+
+  @media (max-width:667px) {
+    
+    .movieContent{
+        display: flex;
+    }
+
+    #moviesCard{
+        flex-wrap: wrap !important;
+    }
+
+    #cardBody{
+        width: 100%;
+    }
+  }
+
+
+  @media (max-width:380px) {
+    
+    .movieContent{
+        display: none;
+    }
+
+  }
+
+  @media (max-width:325px) {
+    
+    #movies{
+        width: 100%;
+    }
+
+    .movieContent{
+        display: flex;
+    }
+
+  }
